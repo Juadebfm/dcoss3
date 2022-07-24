@@ -7,10 +7,10 @@
   --text-gray: #808291;
   --text-white: #f8f9fa;
   --text-light: #f6f6f6;
-  --text-dark: #1a3260;
-  --text-dark2: #1a3760d4;
-  --text-red: #ff4d6d;
-  --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+  --text-dark: #daa520;
+  --text-dark2: #daa520;
+  --text-red: #daa520;
+  --box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.524);
   --bg-blue: rgb(249, 243, 255);
   --bg-red: rgb(254, 247, 252);
   --bg-yellow: rgb(255, 255, 246);
@@ -20,15 +20,15 @@
   --font-poppins: "Poppins", "sans-serif";
 
   /* gradient colors */
-  --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
+  --bg-gradient: linear-gradient(to right, #0060d1, #006cd1);
   --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
   --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
 
   /* images */
-  --bg-cover: url("./assets/bgimg1.png");
-  --bg-image1: url("./assets/img1.png");
-  --bg-image2: url("./assets/img2.png");
-  --bg-image3: url("./assets/img3.png");
+  --bg-cover: #fff;
+  --bg-image1: #fff;
+  --bg-image2: #fff;
+  --bg-image3: #fff;
 }
 
 * > * {
@@ -135,6 +135,12 @@ ul {
   display: flex;
 }
 
+.flex-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -155,8 +161,17 @@ ul {
   flex-grow: 1;
 }
 
+.hr-line {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }
 
 .text-uppercase {
@@ -204,10 +219,12 @@ ul {
 .link {
   color: var(--text-dark2);
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .link:hover {
-  color: var(--text-red);
+  color: var(--text-light);
+  outline: #f8f9fa;
 }
 
 .btn {
@@ -217,8 +234,8 @@ ul {
 }
 
 .btn-primary {
-  padding: 0.8rem 2rem;
-  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
   font-family: var(--font-poppins);
   font-weight: bold;
 }
@@ -266,7 +283,7 @@ ul {
 
 body {
   width: 100%;
-  background: url("./assets/backgroundpng.png") no-repeat;
+  background: #fff;
   background-size: cover;
 }
 
@@ -287,6 +304,10 @@ body {
   .sm-px-10 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  .nav-logo .header-logo img {
+    display: ;
   }
 }
 
@@ -310,6 +331,9 @@ body {
 
   .md-text-dark {
     color: var(--text-dark2);
+  }
+  .nav-logo .header-logo img {
+    display: none;
   }
 }
 
@@ -351,6 +375,9 @@ body {
 
   .lg-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .nav-logo .header-logo img {
+    display: none;
   }
 }
 
