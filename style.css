@@ -10,7 +10,7 @@
   --text-dark: #000000;
   --text-dark2: #050404;
   --text-red: #000000;
-  --box-shadow: 0px 0px 50px 0px #111;
+  --box-shadow: 0px 0px 15px 0px #111;
   --bg-blue: #4895ef;
   --bg-red: #4cc9f0;
   --bg-yellow: #4895ef;
@@ -20,9 +20,9 @@
   --font-poppins: "Poppins", "sans-serif";
 
   /* gradient colors */
-  --bg-gradient: linear-gradient(to right, #2f4550, #586f7c);
-  --bg-gradient-indigo: linear-gradient(to right, #586f7c, #2f4550);
-  --bg-gradient-peach: linear-gradient(to right, #586f7c, #2f4550);
+  --bg-gradient: linear-gradient(to right, #3a7ca5, #2f6690);
+  --bg-gradient-indigo: linear-gradient(to right, #2f6690, #3a7ca5);
+  --bg-gradient-peach: linear-gradient(to right, #2f6690, #3a7ca5);
 
   /* images */
   --bg-cover: #f8f9fa;
@@ -162,7 +162,7 @@ ul {
 }
 
 .hr-line {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #050404;
   width: 100%;
 }
 
@@ -223,7 +223,7 @@ ul {
 }
 
 .link:hover {
-  color: var(--text-light);
+  color: var(--text-dark);
   outline: #f8f9fa;
 }
 
@@ -231,6 +231,8 @@ ul {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  background: #2f6690 !important;
+  color: #f8f9fa !important;
 }
 
 .btn-primary {
@@ -238,6 +240,7 @@ ul {
   border-radius: 10px;
   font-family: var(--font-poppins);
   font-weight: bold;
+  background: #2f6690 !important;
 }
 
 .btn-shodow {
@@ -245,7 +248,7 @@ ul {
 }
 
 .btn-primary:hover {
-  background: var(--bg-gradient-indigo);
+  background: #2f6690;
 }
 
 .bg-cover {
@@ -283,7 +286,7 @@ ul {
 
 body {
   width: 100%;
-  background: #fff;
+  background: #f8f9fa;
   background-size: cover;
 }
 
