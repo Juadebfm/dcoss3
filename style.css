@@ -11,10 +11,10 @@
   --text-dark2: #daa520;
   --text-red: #daa520;
   --box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.524);
-  --bg-blue: rgb(249, 243, 255);
-  --bg-red: rgb(254, 247, 252);
-  --bg-yellow: rgb(255, 255, 246);
-  --bg-purple: rgb(246, 255, 255);
+  --bg-blue: #0060d1;
+  --bg-red: rgba(209, 33, 33, 0.637);
+  --bg-yellow: rgba(235, 235, 15, 0.822);
+  --bg-purple: rgb(119, 23, 164);
 
   /* font familiy */
   --font-poppins: "Poppins", "sans-serif";
