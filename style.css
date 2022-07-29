@@ -7,7 +7,7 @@
   /* text colors */
   --text-gray: #000000;
   --text-white: #f8f9fa;
-  --text-light: #f6f6f6;
+  --text-light: #e0dddd;
   --text-dark: #000000;
   --text-dark2: #050404;
   --text-red: #000000;
@@ -287,6 +287,9 @@ ul {
 
 .btn-shadow {
   box-shadow: var(--box-shadow);
+}
+.bi {
+  font-size: 3rem;
 }
 
 body {
