@@ -227,7 +227,7 @@ ul {
 }
 
 .link:hover {
-  color: var(--text-dark);
+  color: #adb5bd;
   outline: #f8f9fa;
 }
 
@@ -311,6 +311,10 @@ body {
 
   .sm-text-xl {
     font-size: 3em;
+  }
+
+  .mg-top {
+    margin-top: 1rem;
   }
 
   .sm-px-10 {
@@ -629,7 +633,7 @@ body {
 }
 
 #footer .grid button.btn-go:hover {
-  background-color: var(--text-dark2);
+  background-color: var(--bg-blue);
   color: var(--text-white);
 }
 
