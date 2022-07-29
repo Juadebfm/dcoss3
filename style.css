@@ -20,12 +20,12 @@
   --font-poppins: "Poppins", "sans-serif";
 
   /* gradient colors */
-  --bg-gradient: linear-gradient(to right, #3a7ca5, #2f6690);
-  --bg-gradient-indigo: linear-gradient(to right, #2f6690, #3a7ca5);
-  --bg-gradient-peach: linear-gradient(to right, #2f6690, #3a7ca5);
+  --bg-gradient: linear-gradient(to right, #212529, #343a40);
+  --bg-gradient-indigo: linear-gradient(to right, #343a40, #343a40);
+  --bg-gradient-peach: linear-gradient(to right, #212529, #343a40);
 
   /* images */
-  --bg-cover: #f8f9fa;
+  --bg-cover: url("/assets/home\ \(7\).jpg");
   --bg-image1: url("/assets/homea.jpg");
   --bg-image2: url("/assets/homea.jpg");
   --bg-image3: url("/assets/homea.jpg");
@@ -231,7 +231,7 @@ ul {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background: #2f6690 !important;
+  background: #212529 !important;
   color: #f8f9fa !important;
 }
 
@@ -240,7 +240,7 @@ ul {
   border-radius: 10px;
   font-family: var(--font-poppins);
   font-weight: bold;
-  background: #2f6690 !important;
+  background: #212529 !important;
 }
 
 .btn-shodow {
@@ -248,7 +248,8 @@ ul {
 }
 
 .btn-primary:hover {
-  background: #2f6690;
+  background: #adb5bd !important;
+  color: #000 !important;
 }
 
 .bg-cover {
@@ -286,7 +287,8 @@ ul {
 
 body {
   width: 100%;
-  background: #f8f9fa;
+  background: url("/assets/home\ \(7\).jpg");
+  object-fit: cover;
   background-size: cover;
 }
 
