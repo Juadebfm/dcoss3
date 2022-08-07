@@ -25,7 +25,17 @@
     />
     <!-- stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
+  <!-- JUMP TO TOP BUTTON -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="bx bx-chevron-up-circle"></i>
+  </button>
+
   <body>
     <!-- Header Section -->
     <header class="container-fluid">
@@ -42,13 +52,20 @@
         <div class="margin-tip collapse flex-grow hr-line">
           <ul class="flex-2">
             <li>
+              <img
+                style="padding: 0; margin: -16px"
+                src="/assets/Logo-1.png"
+                alt=""
+              />
+            </li>
+            <li>
               <a href="#" class="link">Home</a>
             </li>
             <li>
-              <a href="#" class="link">About</a>
+              <a href="#about" class="link">About</a>
             </li>
             <li>
-              <a href="#" class="link">Services</a>
+              <a href="#services" class="link">Services</a>
             </li>
 
             <li>
@@ -71,10 +88,12 @@
         <div class="container mx-auto banner-title">
           <div class="title text-center md-text-left">
             <div
-              class="py-2 branding text-light md-text-dark text-lg sm-text-xl font-bold"
+              class="branding text-light md-text-dark text-lg sm-text-xl font-bold"
+              style="margin-top: -100px; color: black"
             >
               <span class="italics">Branding,</span>
               <span class="italics">Product Marketing</span>
+              <br />
               <span class="italics">And Business Solutions</span>
             </div>
             <div class="py-5 animate__animated animate__fadeInUp">
@@ -98,15 +117,14 @@
       </section>
       <!-- /banner area -->
 
-      <!-- agency area -->
-      <section class="agency-area">
+      <!-- Services area -->
+      <section class="agency-area" id="services">
         <div class="container mx-auto text-center font-poppins">
-          <span class="text-red">Services We Provide</span>
+          <span class="text-red"
+            >Services Juadebfm Designs Offers That Can Help You</span
+          >
           <div class="area-title">
-            <h1 class="text-lg text-dark italics">
-              We design and build beautiful digital <br />
-              products that make a difference
-            </h1>
+            <h1 class="text-lg text-dark italics">About Our Services</h1>
           </div>
 
           <div class="grid cols-1 lg-cols-3 py-10">
@@ -114,12 +132,12 @@
               <div class="text-center text-2xl text-red">
                 <i class="bi bi-bricks"></i>
               </div>
-              <div class="text-center">
-                <h4 class="text-md py-2">Grow Your Business</h4>
+              <div class="text-center beautify">
+                <h4 class="text-md py-2">Business Growth</h4>
                 <p class="text-gray">
-                  Simple, self descriptive websites that helps your users
-                  navigate your page to have a better understanding of your
-                  products and services.
+                  Helps your users navigate your page to have a better
+                  understanding of your products and services, enhance your
+                  business giving rise to growth.
                 </p>
               </div>
             </div>
@@ -127,13 +145,12 @@
               <div class="text-center text-2xl text-red">
                 <i class="bi bi-megaphone"></i>
               </div>
-              <div class="text-center">
+              <div class="text-center beautify">
                 <h4 class="text-md py-2">Digital Marketing</h4>
                 <p class="text-gray">
                   Giving your business and organization the push it needs for
-                  better reach and creating surveys to better understand market
-                  and customer behaviors which will yield better returns in
-                  investment and capital.
+                  better reach which will yield better returns in investment and
+                  capital.
                 </p>
               </div>
             </div>
@@ -141,11 +158,11 @@
               <div class="text-center text-2xl text-red">
                 <i class="bi bi-mouse"></i>
               </div>
-              <div class="text-center">
-                <h4 class="text-md py-2">Search Engine Optimization</h4>
+              <div class="text-center beautify">
+                <h4 class="text-md py-2">SEO</h4>
                 <p class="text-gray">
-                  Websites that are relevant, clear and accessible to your user
-                  improving the optimization on search engines.
+                  Designing websites that are scalable, clear and accessible to
+                  your user improving the optimization on search engines.
                 </p>
               </div>
             </div>
@@ -154,11 +171,12 @@
               <div class="text-center text-2xl text-red">
                 <i class="bi bi-paint-bucket"></i>
               </div>
-              <div class="text-center">
+              <div class="text-center beautify">
                 <h4 class="text-md py-2">Minimalistic Web Design.</h4>
                 <p class="text-gray">
                   Simple, relatable and less complicated designs that explains
-                  organizational goals, strategy and aims.
+                  organizational goals, strategy and aims. Ease of use for your
+                  users.
                 </p>
               </div>
             </div>
@@ -167,36 +185,22 @@
               <div class="text-center text-2xl text-red">
                 <i class="bi bi-tools"></i>
               </div>
-              <div class="text-center">
+              <div class="text-center beautify">
                 <h4 class="text-md py-2">24/7 Support.</h4>
                 <p class="text-gray">
                   Support and technical maintenance for the first 2 months of
-                  website development to help scale and manage any technical
-                  issue that might arise.
-                </p>
-              </div>
-            </div>
-
-            <div class="grid-item px-5">
-              <div class="text-center text-2xl text-red">
-                <i class="bi bi-server"></i>
-              </div>
-              <div class="text-center">
-                <h4 class="text-md py-2">Content Management.</h4>
-                <p class="text-gray">
-                  Simple, relatable and less complicated content management
-                  systems with maintenance training for representatives of your
-                  organization.
+                  website development to help manage any technical issue that
+                  might arise.
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- /agency area -->
+      <!-- /Services area -->
 
-      <!-- digital life area -->
-      <section class="container mx-auto life-area">
+      <!-- About Us-->
+      <section class="container mx-auto life-area" id="about">
         <div class="grid cols-1 lg-cols-2 text-center md-text-left">
           <div class="grid-images">
             <div data-rellax-speed="2" class="item-one rellax"></div>
@@ -209,7 +213,7 @@
             >
             <div class="font-poppins">
               <h1 class="text-lg text-dark py-5">
-                Connect to people using <br />
+                Juadebfm Designs connects to people using <br />
                 visual and digital art forms.
               </h1>
 
@@ -232,7 +236,7 @@
 
               <div class="py-5">
                 <a
-                  href="#"
+                  href="#services"
                   class="btn btn-primary bg-gradient btn-shadow text-white"
                   >Learn More</a
                 >
@@ -393,7 +397,7 @@
       <!-- article area -->
       <section class="article-area container mx-auto py-10" id="webdev">
         <div class="area-title text-center font-poppins">
-          <span class="text-red">More Projects</span>
+          <span class="text-red">Projects Completed</span>
           <h1 class="text-lg text-dark">Projects Often Updated</h1>
         </div>
 
@@ -408,6 +412,7 @@
                     <a
                       class="link"
                       target="_blank"
+                      title="Juadeb Website"
                       href="https://juadebfm-designs.vercel.app/"
                       >Simple Websites Built Using ReactJS.</a
                     >
@@ -418,29 +423,26 @@
           </div>
           <div class="card animate__animated animate__fadeInLeft">
             <article class="btn-shadow">
-              <img src="./assets/home (2).jpg" class="w-100" alt="" />
+              <img src="./assets/home (4).jpg" class="w-100" alt="" />
               <div class="px-5 py-5">
-                <span class="text-gray"
-                  >A Business Website For A Financial Company.</span
+                <span class="text-gray">A Fitness App.</span>
+                <a
+                  href="https://juadeb-fitness.netlify.app"
+                  target="_blank"
+                  title="Fitness App"
                 >
-                <a href="#">
-                  <h2 class="text-dark">
-                    Built using HTML5, CSS3 & Vanilla Javascript.
-                  </h2>
+                  <h2 class="text-dark link">Built using React Javascript.</h2>
                 </a>
               </div>
             </article>
           </div>
           <div class="card animate__animated animate__fadeInLeft">
             <article class="btn-shadow">
-              <img src="./assets/home (5).jpg" class="w-100" alt="" />
+              <img src="./assets/home (4).jpg" class="w-100" alt="" />
               <div class="px-5 py-5">
-                <span class="text-gray"
-                  >UI/UX Design For Website Backgrounds & Other Visual and
-                  Display Content Use.</span
-                >
+                <span class="text-gray">Reusable Landing Page Background.</span>
                 <a href="#">
-                  <h2 class="text-dark">
+                  <h2 class="text-dark link">
                     Figma, Canva & Adope Illustrator For Designs.
                   </h2>
                 </a>
@@ -459,14 +461,14 @@
           <div class="w-50">
             <h1 class="text-lg sm-text-xl text-dark">Ready to get started?</h1>
             <p class="text-gray mg-top">
-              Get up to 40% off your intial fee after your first project with
+              Get up to 40% off your initial fee after your first project with
               us, including other awesome bonuses, Join us and we'll help
               achieve your goals...
             </p>
           </div>
           <div class="cols py-5">
             <a
-              href="#"
+              href="mailto:juadebgabriel@gmail.com"
               class="btn-shadow text-white btn btn-primary d-block text-center bg-gradient"
             >
               <span class="text-uppercase text-sm">Get Started</span>
@@ -491,17 +493,17 @@
           <div class="text-gray text-center md-text-left">
             <h3 class="text-dark">Juadebfm</h3>
             <div class="py-5">
-              <a href="#" class="d-block">
-                <span class="text-gray">About us</span>
+              <a href="#about" class="d-block">
+                <span class="text-gray link">About us</span>
               </a>
               <a href="#" class="d-block">
-                <span class="text-gray">Home</span>
+                <span class="text-gray link">Home</span>
               </a>
-              <a href="#" class="d-block">
-                <span class="text-gray">Services</span>
+              <a href="#services" class="d-block">
+                <span class="text-gray link">Services</span>
               </a>
-              <a href="#" class="d-block">
-                <span class="text-gray">Contact</span>
+              <a href="mailto:juadebgabriel@gmail.com" class="d-block">
+                <span class="text-gray link">Contact</span>
               </a>
             </div>
           </div>
@@ -548,7 +550,13 @@
 
         <div class="copyrights font-poppins">
           <p class="text-gray py-5 text-center">
-            © 2022 Juadebgabriel. All rights reserved.
+            <img
+              height="20px"
+              width="20px"
+              style="margin-bottom: -5px"
+              src="/assets/logo.png"
+              alt=""
+            />2022 Juadebfm Designs. All rights reserved.
           </p>
         </div>
       </section>

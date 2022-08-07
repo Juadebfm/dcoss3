@@ -27,9 +27,9 @@
 
   /* images */
   --bg-cover: url("/assets/home\ \(1\).jpg");
-  --bg-image1: url("/assets/Designs.jpg");
-  --bg-image2: url("/assets/Designs.jpg");
-  --bg-image3: url("/assets/Designs.jpg");
+  --bg-image1: url("/assets/desi\ \(3\).jpg");
+  --bg-image2: url("/assets/dessi.jpg");
+  --bg-image3: url("/assets/desi4.jpg");
 }
 
 * > * {
@@ -70,6 +70,20 @@ ul {
 
 .italics {
   font-family: "Lora", serif;
+  font-size: 1em;
+}
+
+.beautify {
+  border: 1px solid #212529;
+  padding: 2em;
+  height: 350px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.beautify:hover {
+  border: 1px solid #212529;
+  background-color: #343a401f;
 }
 
 .text-dark {
@@ -86,6 +100,7 @@ ul {
 
 .text-gray {
   color: var(--text-gray);
+  font-size: 1rem;
 }
 
 .text-red {
@@ -139,7 +154,7 @@ ul {
 
 .text-lg {
   font-size: 2.2em;
-  line-height: 3rem;
+  line-height: 3.2rem;
 }
 
 .text-xl {
@@ -246,7 +261,7 @@ ul {
 }
 
 .link:hover {
-  color: #adb5bd;
+  color: #d10606;
   outline: #f8f9fa;
 }
 
